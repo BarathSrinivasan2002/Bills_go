@@ -1,0 +1,31 @@
+	for {
+		line, error := reader.Read()
+		if error == io.EOF {
+			break
+		} else if error != nil {
+			log.Fatal(error)
+		}
+		records = append(records, Account{
+			Account_Type:   line[0],
+			Account_Number: line[1],
+			Trans_Date:     line[2],
+			Cheque_no:      line[3],
+			Description_1:  line[4],
+			Description_2:  line[5],
+			CAD, err : strconv.ParseFloat(row[6], 64),
+			USD:            line[7],
+		})
+
+
+
+    return d, nil
+
+	}
+
+
+
+
+
+
+
+
